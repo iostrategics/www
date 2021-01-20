@@ -1,0 +1,26 @@
+$font-family-body: "Montserrat",
+// Safari for macOS and iOS (San Francisco)
+  -apple-system,
+// Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+// Windows
+  "Segoe UI",
+// Android
+  "Roboto",
+// Basic web fallback
+  "Helvetica Neue",
+Arial, sans-serif,
+// Emoji fonts
+  "Apple Color Emoji",
+"Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-family-heading: $font-family-body;
+
+$font-weight-body-lite: 400;
+$font-weight-body-bold: 600;
+$font-weight-heading-lite: 400;
+$font-weight-heading-bold: 600;
+
+$page-content-max-width: 1440px;
+
+$breakpoint-md: 960px;

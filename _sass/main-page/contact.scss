@@ -1,0 +1,25 @@
+// Contact
+
+.page-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-contact .content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 49rem;
+}
+
+.page-contact .button {
+  background-color: #54842d;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+// ***
+
+@media (max-width: $breakpoint-md) {
+}

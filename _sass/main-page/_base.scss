@@ -1,0 +1,63 @@
+html {
+  line-height: 1.35;
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  min-height: 1100px;
+}
+
+.page {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  width: 100%;
+  max-width: $page-content-max-width;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-icon {
+  width: 5.25rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.title + .subtitle {
+  margin-top: -1em;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+// ***
+@media (max-height: 1200px) {
+  .page {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .title + .subtitle {
+    margin-top: -1em;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}

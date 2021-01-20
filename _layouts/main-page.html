@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% unless site.dev %}
+	{% include google_analytics.html %}
+	{% endunless %}
+
+	{% unless site.dev %}
+	{% include google_tagman_head.html %}
+	{% endunless %}
+
+	{{ page.head_custom }}
+
+	{% capture default_title %}Tech | Strategy | Communications{% endcapture %}
+
+	{% capture default_desc %}{% endcapture %}
+
+	<title>{{ page.meta_title | default: default_title }} | i/ō Strategics</title>
+
+	<meta name="description" content="{{ page.meta_desc | default: default_desc }}">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="stylesheet" href="/css/main-page.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	{% unless site.dev %}
+	{% include google_tagman_body.html %}
+	{% endunless %}
+
+	{{ content }}
+</body>
+
+</html>

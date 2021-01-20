@@ -1,0 +1,90 @@
+// Services
+
+.page-services {
+  // background: url("/img/services-bg.svg") no-repeat;
+  background-size: 100% 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4b4b4b;
+}
+
+.page-services .content {
+  text-align: center;
+}
+
+.page-services .button {
+  background-color: #4b4b4b;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.page-services .constrain {
+  max-width: 49rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-services__outcomes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.page-services__outcomes-box {
+  background: url("/img/services-bg-alt.svg") no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 2rem;
+  color: #eef0f5;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 1rem;
+}
+
+.page-services__outcomes-box p {
+  text-transform: uppercase;
+  font-weight: $font-weight-body-bold;
+}
+
+.page-services .hexes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; // Override Safari bug where flex causes child item images to stretch
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: 3rem;
+}
+
+.page-services .hex-icon {
+  width: 100%;
+  max-width: 3.75rem;
+}
+
+.page-services .hex-1 {
+  filter: opacity(90%);
+}
+
+.page-services .hex-2 {
+  filter: opacity(65%);
+}
+
+.page-services .hex-3 {
+  filter: opacity(40%);
+}
+
+.page-services .hex-4 {
+  filter: opacity(15%);
+}
+// ***
+
+@media (max-width: $breakpoint-md) {
+
+  .page-services__outcomes {
+    flex-direction: column;
+  }
+}

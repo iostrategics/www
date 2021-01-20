@@ -1,0 +1,167 @@
+// Home
+
+.page-home {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  background: url("/img/splash-bg.jpg") no-repeat; // https://www.shutterstock.com/image-vector/abstract-technology-communication-design-innovation-concept-1175810290
+  background-size: cover;
+  background-position: bottom right;
+
+  border-bottom: 1px solid #b4b4b4;
+
+  padding-top: 0; // Negate the default section padding.
+  padding-bottom: 0;
+}
+
+.page-home .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-home__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-home__nav-brand {
+  height: 2.5rem;
+  flex-shrink: 1;
+  max-height: 24px;
+}
+
+.page-home__nav-menu-toggle .img {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+
+.page-home__nav-menu {
+  visibility: hidden; // Can't change display property or disables transitions
+  position: fixed;
+  left: 0;
+  top: -100vh;
+  background-color: #f4f4f4;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-home__nav-menu a {
+  color: #4b4b4b;
+  text-decoration: none;
+}
+
+.page-home__nav-menu:target {
+  visibility: visible;
+  top: 0;
+  transition: top 0.3s ease-out;
+}
+
+.page-home__nav-menu .list {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.page-home__nav-menu .list .closer {
+  font-size: 2rem;
+}
+
+.page-home__nav-menu .menu-item {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.page-home__splash {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-home__splash .headline {
+  font-size: 3.5rem;
+  color: #5f779f;
+  //color: #2a5282;
+  //padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+.page-home__splash .tagline {
+  // color: #5f779f;
+  font-size: 1.8rem;
+  margin-top: 0.5em;
+  padding-bottom: 4rem;
+}
+
+.page-home__scroller a {
+  text-decoration: none;
+}
+
+.page-home__scroller {
+  flex-shrink: 1;
+  padding-bottom: 2rem;
+}
+
+.page-home__scroller,
+.page-home__scroller a {
+  color: #959595;
+}
+
+.page-home__scroller .arrow::before {
+  content: "↓";
+  font-size: 2rem;
+  position: absolute;
+  animation: scroll-indicator-bounce 3s ease infinite;
+}
+
+@keyframes scroll-indicator-bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// ***
+
+@media (max-width: $breakpoint-md) {
+  // .page-home__nav {
+  //   justify-content: center;
+  // }
+
+  .page-home__nav-menu-toggle img {
+    margin-left: 1rem;
+  }
+
+  .page-home__splash {
+    text-align: center;
+  }
+
+  .page-home__splash .headline {
+    font-size: 2.8rem;
+  }
+
+  .page-home__splash .tagline {
+    font-size: 1.5rem;
+  }
+
+  .page-home__scroller {
+    text-align: center;
+  }
+
+  .page-home__scroller,
+  .page-home__scroller a {
+    color: #515151;
+  }
+}

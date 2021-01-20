@@ -1,0 +1,11 @@
+
+# Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://iostrategics.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build Settings
+markdown: kramdown
+exclude: [readme.md", "assets", "*.yml", "*.sh"]
+
+sass:
+  style: compressed

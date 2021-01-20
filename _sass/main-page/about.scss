@@ -1,0 +1,65 @@
+// About
+
+.page-about {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-about .content {
+  color: #eef0f5;
+  background-color: #1d2c43;
+  width: 100%;
+  max-width: 1440px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-about .content a {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.page-about__photo {
+  flex-shrink: 1;
+  text-align: center;
+}
+
+.page-about__photo .img {
+  width: auto;
+  max-width: 280px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+
+.page-about__bio {
+  padding-left: 3rem;
+  flex-grow: 1;
+}
+
+// ***
+
+@media (max-width: $breakpoint-md) {
+  .page-about {
+    background-color: #1d2c43;
+  }
+  .page-about .content {
+    padding: 0.5rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-about__photo .img {
+    width: 100%;
+  }
+  .page-about__bio {
+    padding: 0;
+    // text-align: center;
+  }
+  .page-about__bio .title,
+  .page-about__bio .subtitle {
+    text-align: center;
+  }
+}

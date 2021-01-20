@@ -1,0 +1,54 @@
+// Footer
+
+.footer {
+  background-color: #323232;
+  color: #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 9rem;
+  width: 100%;
+}
+
+.footer .content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .content a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.footer .content > * {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .area1 {
+  text-align: left;
+}
+
+.footer .area2 {
+  text-align: center;
+}
+
+.footer .area3 {
+  text-align: right;
+}
+
+// ***
+
+@media (max-width: $breakpoint-md) {
+  .footer .content {
+    flex-direction: column-reverse;
+  }
+  .footer .area1 {
+    text-align: center;
+  }
+  .footer .area3 {
+    text-align: center;
+  }
+}

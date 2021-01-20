@@ -1,0 +1,51 @@
+---
+---
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% unless site.dev %}
+    {% include google_analytics.html %}
+    {% endunless %}
+
+    {% unless site.dev %}
+    {% include google_tagman_head.html %}
+    {% endunless %}
+
+    <meta name="robots" content="noindex">
+
+    <title>LP Title Here</title>
+
+    <meta name="description" content="{{ page.meta_desc | default: default_desc }}">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    {% unless site.dev %}
+    {% include google_tagman_body.html %}
+    {% endunless %}
+
+    <section class="hero">
+        <div class="wrapper text-center">
+            <img class="hero-face" src="/img/robot.svg">
+            <h1 class="headline">This is a </h1>
+            <p class="subheadline">Freelance &middot; .NET &middot; JavaScript &middot; HTML/CSS</p>
+        </div>
+    </section>
+
+    <div class="wrapper content">
+
+    </div>
+</body>
+
+</html>
