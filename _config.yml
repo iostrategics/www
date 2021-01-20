@@ -5,7 +5,7 @@ url: "https://iostrategics.com" # the base hostname & protocol for your site, e.
 
 # Build Settings
 markdown: kramdown
-exclude: [readme.md", "assets", "*.yml", "*.sh"]
+exclude: [README.md", "assets", "*.yml", "*.sh"]
 
 sass:
   style: compressed
