@@ -1,5 +1,7 @@
 # iostrategics.com
 
+## Get started
+
 Install jekyll: https://jekyllrb.com/docs/installation/
 
 Serve for development:
